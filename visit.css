@@ -1,0 +1,161 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* VARIABLES */
+/* 
+primary-color: #c0aa83
+dark-grey: #1a1a1a
+*/
+
+html {
+  font-size: 62.5%;
+  font-family: "quiet-sans", sans-serif;
+  color: #fff;
+}
+
+body {
+  background-color: #1a1a1a;
+  box-sizing: border-box;
+}
+
+/* navigation bar */
+
+.nav__wrapper {
+  display: flex;
+  align-items: center;
+  /* position: absolute; */
+  height: 9rem;
+  width: 100%;
+  background-color: #1a1a1a;
+  border-bottom: 4px solid #c0aa83;
+  margin-bottom: 8rem; /* MIGHT REMOVE*/
+}
+
+.navigation {
+  width: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 1rem;
+}
+
+.nav__logo {
+  height: 6rem;
+}
+
+.nav__container {
+  display: inherit;
+}
+
+.nav__list {
+  display: inherit;
+  list-style: none;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.25s;
+}
+
+.nav__link:hover {
+  color: #c0aa83;
+}
+.nav__link:focus {
+  outline: none;
+}
+
+/* BODY */
+
+.section-visit {
+  height: auto;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.section-heading {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.visit__container {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 8rem;
+}
+
+.visit__google-maps {
+  width: 55vw;
+  height: 60vh;
+}
+
+.visit__contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 3rem;
+  text-align: center;
+}
+
+.contact--icon {
+  height: 7rem;
+  width: auto;
+  padding: 2rem;
+}
+
+.contact__info--row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1024px) {
+  .visit__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .visit__contact-info {
+    padding-top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .visit__google-maps {
+    height: 30rem;
+    width: 40rem;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .visit__google-maps {
+    height: 25rem;
+    width: 35rem;
+  }
+  .section-visit {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 363px) {
+  .visit__google-maps {
+    height: 25rem;
+    width: 30rem;
+  }
+}
